@@ -225,15 +225,19 @@ h1.title {
 }
 
 .module1__item ul {
+   list-style: none;
    margin: 0px;
    padding: 0px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
 }
 
 .module1__item ul li {
    list-style-type: none;
-   display: inline-block;
+   display: block;
    position: relative;
    padding-left: 20px;
+   margin-bottom: 5px;
    margin-right: 5px;
    font-size: 13px;
    font-style: italic;
@@ -251,7 +255,10 @@ h1.title {
 }
 
 .module1__item li.date::before {
-   content: '\f133';
+   content: '\f024';
+   color: var(--primary-color-03);
+   font-weight: 900;
+   top: -2px;
 }
 
 .module1__item li.top {
