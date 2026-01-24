@@ -1,0 +1,24 @@
+=== Normal Update (Daily work) ===
+git add .
+git commit -m "update"
+git push
+
+
+=== History Verify (Daily work) ===
+git status
+git remote -v
+
+
+=== If .git deleted (History IMPORTANT) ===
+git clone https://github.com/abdullah-al-mahdi/Pro-02.git
+cd Pro-02
+git status
+
+
+=== If .git deleted (History NOT important / repo empty) ===
+git init
+git add .
+git commit -m "reinitialize repository"
+git branch -M main
+git remote add origin https://github.com/abdullah-al-mahdi/Pro-02.git
+git push -u origin main
